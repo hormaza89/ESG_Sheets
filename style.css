@@ -1,0 +1,801 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Global */
+body {
+  background-color: rgba(0, 0, 0, 1);
+}
+nav {
+  min-height: 10vh;
+  background-color: rgb(102 115 107);
+  padding: 1rem;
+  display: flex;
+  border-bottom: 0.25rem solid #a72218;
+}
+
+a,
+p {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.home {
+  padding: 1rem;
+  flex: 4 1 30rem;
+  display: flex;
+}
+
+ul {
+  padding: 1rem;
+  flex: 1 1 30rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hero Section */
+
+.hero {
+  min-height: 65vh;
+  background: url("./images/Data_Science_Costa_Rica.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  min-height: 65vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.hero h1 {
+  position: absolute;
+}
+
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Analytics Section */
+
+.analytics {
+  min-height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.analytics h1 {
+  color: #a72218;
+}
+
+/* Content Section */
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.content-projects {
+  flex: 1 1 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-reviews {
+  flex: 1 1 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content h2 {
+  padding: 2rem 0;
+}
+
+.content-img {
+  width: 100%;
+  position: relative;
+}
+
+.content-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(102, 115, 107);
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.content-overlay h2 {
+  text-align: center;
+}
+
+.content-overlay:hover {
+  opacity: 0.7;
+  transition: 3s ease;
+}
+
+.content img {
+  width: 100%;
+}
+
+/* Footer */
+
+footer {
+  background-color: rgb(102 115 107);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  border-top: 0.25rem solid #a72218;
+  min-height: 10vh;
+}
+
+.author {
+  flex: 4 1 30rem;
+}
+
+.footer-icon {
+  flex: 4 1 30rem;
+  height: 3rem;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.space {
+  min-height: 10vh;
+}
+
+/* Projects Page */
+
+/* Hero Section */
+
+.hero-content {
+  min-height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 1), transparent),
+    url("./images/intro7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Content Section */
+
+.content-items {
+  min-height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.actual-img {
+  flex: 1 1 50rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.actual-img a {
+  display: flex;
+  justify-content: center;
+}
+
+.item-img {
+  width: 80%;
+  margin: auto;
+}
+
+.content-text {
+  flex: 1 1 50rem;
+  padding: 2rem;
+  padding-right: 4rem;
+}
+
+.content-text h3 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 2rem;
+}
+
+.content-text p {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 2rem;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: #a72218;
+  border: none;
+  border-radius: 1rem;
+}
+
+button a {
+  font-size: 1.4rem;
+}
+
+.space-projects {
+  min-height: 5vh;
+}
+
+/* Contact Page */
+
+/* Hero Section */
+
+.hero-contact-about {
+  min-height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 1), transparent),
+    url("./images/costarica2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact Content Section */
+
+.contact-content {
+  min-height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.personal-photo {
+  flex: 1 1 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  flex: 3 1 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2rem;
+}
+
+.card {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-icon {
+  padding-top: 2rem;
+  width: 50%;
+}
+
+.pcontainer {
+  height: 550px;
+  width: 100%;
+  position: relative;
+  top: 40px;
+  margin: 0 0 0 80px;
+  padding: 30px 0;
+}
+
+table {
+  height: 200px;
+  width: 60%;
+  margin: auto auto auto 200px;
+  position: relative;
+  padding-top: 10%;
+  left: 5%;
+}
+
+.perimg {
+  width: 50%;
+}
+
+contact-content h2 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2.8rem;
+}
+
+/* About */
+
+.dacontainer {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid */
+
+.grid {
+  min-height: 210vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40% 30% 30%;
+  grid-template-areas: "box1 box2" "box3 box4" "box5 box6";
+  position: relative;
+}
+
+/* Boxes */
+
+/* Box 1 */
+
+.box1 {
+  grid-area: box1;
+  position: relative;
+  background: url("./images/volcano-718277_640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+/* Box 2 */
+
+.box2 {
+  grid-area: box2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 3rem;
+}
+
+.card-story1 {
+  padding: 1.5rem;
+  background-color: rgba(167, 34, 24, 0.5);
+  border-radius: 1rem;
+  width: 95%;
+}
+
+.card-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card-story2 {
+  flex: 1 1 0rem;
+  width: 90%;
+  margin: 0 2rem 0 3rem;
+  padding: 1rem;
+  background-color: rgba(167, 34, 24, 0.5);
+  border-radius: 1rem;
+  position: relative;
+  top: 5%;
+}
+
+.card-story3 {
+  flex: 1 1 0rem;
+  width: 90%;
+  margin: 0 3rem 0 2rem;
+  padding: 1rem;
+  background-color: rgba(167, 34, 24, 0.5);
+  border-radius: 1rem;
+  position: relative;
+  top: 5%;
+}
+
+.box2 p,
+.box2 h3 {
+  padding: 1rem;
+}
+
+/* Box 3 */
+
+.box3 {
+  grid-area: box3;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card-personal1 {
+  flex: 1 1 18rem;
+  margin: 0 2rem 0 3rem;
+  padding: 2rem;
+  background-color: rgba(167, 34, 24, 0.5);
+  border-radius: 1rem;
+  position: relative;
+  top: 20%;
+}
+
+.card-personal2 {
+  flex: 1 1 18rem;
+  margin: 0 3rem 0 2rem;
+  padding: 2rem;
+  background-color: rgba(167, 34, 24, 0.5);
+  border-radius: 1rem;
+  position: relative;
+  top: 20%;
+}
+
+.box3 p,
+.box3 h3 {
+  padding: 1rem;
+}
+
+/* Box 4 */
+
+.box4 {
+  grid-area: box4;
+  position: relative;
+  background: url("./images/20200606_094904.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Box 5 */
+
+.box5 {
+  grid-area: box5;
+  position: relative;
+  background: url("./images/pexels-markus-spiske-3806771.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Box 6 */
+
+.box6 {
+  grid-area: box6;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card-social1 {
+  flex: 1 1 21rem;
+  margin: 0 2rem 0 3rem;
+  padding: 2rem;
+  background-color: rgba(167, 34, 24, 0.5);
+  border-radius: 1rem;
+  position: relative;
+  top: 10%;
+}
+
+.card-social2 {
+  flex: 1 1 21rem;
+  margin: 0 2rem 0 3rem;
+  padding: 2rem;
+  background-color: rgba(167, 34, 24, 0.5);
+  border-radius: 1rem;
+  position: relative;
+  top: 10%;
+}
+
+.box6 p,
+.box6 h3 {
+  padding: 0.5rem;
+}
+
+.box6 a:link {
+  color: #445363;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.box6 a:visited {
+  color: #445363;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.box6 a:hover {
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+/* End of Boxes */
+
+.overlay-about {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(102, 115, 107);
+  opacity: 0.6;
+}
+
+.grid h3,
+.grid p {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.grid h3 {
+  font-size: 2.3rem;
+}
+
+.grid p {
+  font-size: 1.4rem;
+}
+
+.grid h2 {
+  color: #ffffff;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* End of About */
+
+/* Toronto Vs Montreal */
+
+.content-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  width: 80%;
+  margin: auto;
+}
+
+.tormont-image-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.toronto-image-container {
+  flex: 1 1 0rem;
+  min-height: 20vh;
+}
+
+.montreal-image-container {
+  flex: 2.222 1 0rem;
+  min-height: 20vh;
+}
+
+.toronto-image {
+  width: 100%;
+}
+
+.montreal-image {
+  width: 100%;
+}
+
+.content-description {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  padding: 5rem 0;
+}
+
+.content-description h2,
+.content-description p,
+.content-description a {
+  padding: 1rem 0;
+}
+
+.content-description h3 {
+  color: #ffffff;
+  font-size: 2.3rem;
+  font-family: "Poppins", sans-serif;
+  padding: 6rem 0 1rem 0;
+}
+
+.projects-fpl-image {
+  padding: 2rem;
+}
+
+.content-description a:link {
+  color: rgb(102, 115, 107);
+}
+
+.content-description a:visited {
+  color: rgb(102, 115, 107);
+}
+
+.content-description a:hover {
+  color: rgb(26, 105, 39);
+}
+
+/* Media Queries */
+
+@media (max-width: 1040px) {
+  html {
+    font-size: 58%;
+  }
+  .card-social1,
+  .card-social2 {
+    position: relative;
+    top: 5%;
+  }
+}
+
+@media (max-width: 879px) {
+  html {
+    font-size: 50%;
+  }
+  .card-social1,
+  .card-social2 {
+    position: relative;
+    top: 10%;
+  }
+  .card-personal1,
+  .card-personal2 {
+    position: relative;
+    top: 5%;
+  }
+}
+
+@media (max-width: 666px) {
+  html {
+    font-size: 48%;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    max-height: 15vh;
+  }
+  nav li {
+    padding: 0 2rem;
+  }
+
+  .card-story3 {
+    position: relative;
+    top: 12%;
+    left: 2%;
+  }
+
+  .card-social1,
+  .card-social2 {
+    position: relative;
+    top: 1%;
+  }
+
+  .card-personal1,
+  .card-personal2 {
+    position: relative;
+    top: 4%;
+  }
+
+  footer {
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+    max-height: 15vh;
+  }
+
+  footer a {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 540px) {
+  html {
+    font-size: 40%;
+  }
+
+  .card-story1 {
+    position: relative;
+    top: -5%;
+  }
+
+  .card-story2 {
+    position: relative;
+    top: -6%;
+  }
+
+  .card-story3 {
+    top: -5%;
+    left: 2.5%;
+  }
+
+  .card-personal2 {
+    top: -0.5%;
+    left: 3%;
+  }
+
+  .card-social2 {
+    display: none;
+  }
+
+  .card-social1 {
+    top: 25%;
+  }
+
+  .box4,
+  .box1,
+  .box5 {
+    background-size: contain;
+  }
+}
